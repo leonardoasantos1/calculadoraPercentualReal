@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PorcenReal</title>
+    <link rel="icon" href="assets/img/icone-percentual.png">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/responsive.css">
+</head>
+<body>
+    <main>
+        <form id="calculator">
+            <h1>Calculadora de Percentuais em Reais</h1>
+            <div class="input-group">
+                <label for="n1">Digite a porcentagem:</label>
+                <div class="inputs">
+                    <span>%</span>
+                    <input id="n1" type="number" placeholder="Ex: 20" required step="0.01">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="n2">Digite o valor em reais:</label>
+                <div class="inputs">
+                    <span>R$</span>
+                    <input id="n2" type="number" placeholder="Ex: 1000" required step="0.01">
+                </div>
+            </div>
+            <div id="botoes">
+            <button type="submit" id="cal">Calcular</button>
+            <button type="reset" id="reset">Limpar</button>
+            </div>
+            <p id="res">Resultado: </p><span id="resultado"></span>
+        </form>
+    </main>
+    <script src="assets/JS/script.js"></script>
+</body>
+</html>
